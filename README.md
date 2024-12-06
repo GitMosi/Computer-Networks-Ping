@@ -50,19 +50,13 @@ To install dependencies, run:
 ## **How It Works**
 
 ### Input Handling:
-The user specifies a domain name or an IP address as the target.
-
-The tool verifies and resolves the input accordingly.
+The user specifies a domain name or an IP address as the target. The tool verifies and resolves the input accordingly.
 
 ### Packet Sending:
 The program sends a specified number of ICMP echo requests to the target.
 
 ### Response Analysis:
-For each response, the RTT is calculated and recorded.
-
-If no response is received within a timeout, the packet is marked as lost.
+For each response, the RTT is calculated and recorded. If no response is received within a timeout, the packet is marked as lost.
 
 ### Result Reporting:
-Outputs RTT statistics (minimum, maximum, average).
-
-Calculates and displays the percentage of packet loss.
+Outputs RTT statistics (minimum, maximum, average). Calculates and displays the percentage of packet loss.
