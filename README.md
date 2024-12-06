@@ -5,8 +5,8 @@
 This project implements a Python-based tool to measure the ping response time for a specific server. Inspired by the traditional ping command, it evaluates the Round-Trip Time (RTT) and Packet Loss Rate for client-server communications.
 
 The tool allows users to:
-**
-Check access speeds to a server.
+
+**Check access speeds to a server.
 Calculate minimum, maximum, and average RTT values.
 Measure packet loss percentages.**
 
@@ -15,21 +15,21 @@ It supports both domain names and IP addresses as input and provides detailed re
 ## Features
 
 ### Validation of IP Addresses:
-    Confirms if an input string is a valid IP address using socket.inet_pton.
+Confirms if an input string is a valid IP address using socket.inet_pton.
 
 ### Domain-to-IP Resolution:
-    Resolves domain names to their respective IP addresses using dns.resolver.Resolver.
+Resolves domain names to their respective IP addresses using dns.resolver.Resolver.
 
 ### Reverse DNS Lookup:
-    Retrieves the domain name associated with an IP address.
+Retrieves the domain name associated with an IP address.
 
 ### Ping Implementation:
-    Sends ICMP echo requests to the specified destination.
-    Measures RTT for each packet.
-    Reports packet loss rates.
+Sends ICMP echo requests to the specified destination.
+Measures RTT for each packet.
+Reports packet loss rates.
 
 ### Customizable Request Count:
-    Users can define the number of requests sent during the ping process.
+Users can define the number of requests sent during the ping process.
 
 ## Dependencies
 
@@ -48,16 +48,16 @@ To install dependencies, run:
 ## **How It Works**
 
 ### Input Handling:
-    The user specifies a domain name or an IP address as the target.
-    The tool verifies and resolves the input accordingly.
+The user specifies a domain name or an IP address as the target.
+The tool verifies and resolves the input accordingly.
 
 ### Packet Sending:
-    The program sends a specified number of ICMP echo requests to the target.
+The program sends a specified number of ICMP echo requests to the target.
 
 ### Response Analysis:
-    For each response, the RTT is calculated and recorded.
-    If no response is received within a timeout, the packet is marked as lost.
+For each response, the RTT is calculated and recorded.
+If no response is received within a timeout, the packet is marked as lost.
 
 ### Result Reporting:
-    Outputs RTT statistics (minimum, maximum, average).
-    Calculates and displays the percentage of packet loss.
+Outputs RTT statistics (minimum, maximum, average).
+Calculates and displays the percentage of packet loss.
