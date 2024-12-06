@@ -6,9 +6,9 @@ This project implements a Python-based tool to measure the ping response time fo
 
 The tool allows users to:
 
-**Check access speeds to a server.
-Calculate minimum, maximum, and average RTT values.
-Measure packet loss percentages.**
+1. Check access speeds to a server.
+2. Calculate minimum, maximum, and average RTT values.
+3. Measure packet loss percentages.
 
 It supports both domain names and IP addresses as input and provides detailed results for network analysis.
 
