@@ -1,4 +1,4 @@
-# Computer-Networks-Ping
+# Computer Networks Ping
 
 ## Overview
 
